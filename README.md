@@ -15,4 +15,4 @@ action by unauthorized users/roles.
 3. Run `terraform apply -var-file=dev.tfvars`
 
 ## Conclusion
-You can read up more on the implementation over here - 
+You can read up more on the implementation over here - https://medium.com/@xinweiiiii/monitor-aws-s3-getobject-events-and-send-notification-to-slack-using-cloudtrail-lambda-89a8cb1122e9

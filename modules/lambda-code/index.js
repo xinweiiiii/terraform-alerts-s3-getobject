@@ -13,24 +13,24 @@ exports.handler = async (event) => {
         const objectKey = JSON.parse(dataEvent.message).requestParameters.key
 
         if (username != '' && objectKey != '') {
-            const data = {
+            const notificationData = {
                 blocks: [
                     {
                         type: 'section',
                         text: {
-                            text: `*S3 Selfie Object Extracted* Alert :flip-table. Date: *${getDateTime()}`,
+                            text: `*S3 Object Extracted* Date: *${getDateTime()}`,
                             type: 'mrkdwn',
                         },
                     },
                 ],
             };
 
-            const res = await post(process.env.webhook_url, data)
+            const res = await post(process.env.webhook_url, notificationData)
         }
     }
 
-    async function post(url, data) {
-        const dataString = JSON.stringify(data)
+    async function post(url, notificationData) {
+        const dataString = JSON.stringify(notificationData)
 
         const options = {
             method: 'POST',
