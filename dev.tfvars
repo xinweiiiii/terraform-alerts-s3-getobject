@@ -1,0 +1,7 @@
+account_id = "<INPUT YOUR AWS ACCOUNT ID>"
+table_arn = "<INPUT YOUR TABLE ARN>"
+webhook_url = "<INPUT YOUR SLACK WEBHOOK URL>"
+project = "<INPUT YOUR PROJECT NAME>"
+environment = "<INPUT YOUR ENVIRONMENT>"
+region = "<INPUT YOUR AWS PROJECT REGION>"
+
